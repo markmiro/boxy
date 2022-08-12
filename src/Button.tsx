@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-const Button: FC<{ primary: boolean }> = ({
+export const Button: FC<{ primary: boolean }> = ({
   primary,
   children,
   style,
@@ -22,5 +22,3 @@ const Button: FC<{ primary: boolean }> = ({
     </button>
   );
 };
-
-export default Button;
