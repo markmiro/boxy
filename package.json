@@ -1,5 +1,8 @@
 {
   "name": "@markmiro/boxy",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "1.0.3",
   "description": "A boxy component library",
   "source": "src/index.ts",
