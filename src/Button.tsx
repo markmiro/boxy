@@ -1,11 +1,10 @@
 import React, { FC } from "react";
 
-export const Button: FC<{ primary: boolean }> = ({
-  primary,
-  children,
-  style,
-  ...rest
-}) => {
+type ButtonType = FC<
+  { primary?: boolean } & React.HTMLProps<HTMLButtonElement>
+>;
+
+export const Button: ButtonType = ({ primary, children, style, ...rest }) => {
   return (
     <button
       style={{
